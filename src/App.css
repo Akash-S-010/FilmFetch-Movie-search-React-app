@@ -71,6 +71,7 @@ body {
     box-shadow: 1px 1px 30px 1px #3beff52a;
     margin: 30px 150px 0;
     justify-content: space-between;
+    align-items: center;
     border-radius: 10px;
     text-align: center;
     color: var(--secondary-color);
@@ -79,6 +80,7 @@ body {
 .movie-info {
     margin: 0 auto;
 }
+
 .title {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -167,4 +169,27 @@ body {
     padding: 15px 50px;
     border: 1px solid rgb(250, 122, 122);
     text-align: center;
+}
+
+@media (width < 767px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 0px;
+        color: #fff;
+    }
+    .header .search-container {
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+    
+    .Movie-field {
+        flex-direction: column;
+        padding: 10px;
+        margin: 30px 30px 0;
+    }
+    .genre {
+        flex-direction: column;
+        gap: 25px;
+    }
 }
