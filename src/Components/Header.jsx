@@ -2,7 +2,10 @@ import React from "react";
 import logo from "../assets/filmfetch.png";
 import "../App.css";
 
-function Header() {
+function Header({ movieName, setMovieName, fetchMovies }) {
+  const handleSearch = () => {
+    fetchMovies();
+  };
 
   return (
     <div className="header">
@@ -13,9 +16,10 @@ function Header() {
         <input
           type="text"
           placeholder="Search Your Movies.."
-          onChange={(e) => setSearchItem(e.target.value)}
+          value={movieName}
+          onChange={(e) => setMovieName(e.target.value)}
         />
-        <button onClick={fetchMovies}>Search</button>
+        <button onClick={handleSearch}>Search</button>
       </div>
     </div>
   );

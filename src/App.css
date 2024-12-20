@@ -68,19 +68,17 @@ body {
     flex-wrap: wrap;
     padding: 20px;
     background-color: #0c1618;
-    box-shadow: 1px 1px 40px 1px #3beff52a;
-    margin: 10px 150px;
+    box-shadow: 1px 1px 30px 1px #3beff52a;
+    margin: 30px 150px 0;
     justify-content: space-between;
     border-radius: 10px;
     text-align: center;
     color: var(--secondary-color);
-
 }
 
 .movie-info {
     margin: 0 auto;
 }
-
 .title {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -88,7 +86,9 @@ body {
     letter-spacing: 2px;
     margin-top: 5px;
 }
-.release-date,.directors{
+
+.release-date,
+.directors {
     font-weight: 600;
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 .genre .genre-item {
-    background-color: #3beff51e;
+    background-color: #3beff50e;
     padding: 5px 15px;
     border-radius: 20px;
     color: #3beef5;
@@ -115,25 +115,56 @@ body {
 
 .plot {
     max-width: 850px;
+    color: #3beff56b;
+    font-weight: 200;
 }
 
 .rating {
-    margin: 27px 0;
+    margin: 27px 0 20px;
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .rating-value {
     color: var(--primary-color);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .cast {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .data-name {
     color: var(--secondary-color);
     font-weight: 100;
     margin-right: 10px;
+}
+
+.no-movie-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--secondary-color);
+    background-color: #0c1618;
+    padding: 15px 10px;
+    width: 800px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+}
+
+.error-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(255, 70, 70);
+    background-color: #0c1618;
+    padding: 15px 50px;
+    border: 1px solid rgb(250, 122, 122);
+    text-align: center;
 }
