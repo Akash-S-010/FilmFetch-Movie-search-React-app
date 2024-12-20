@@ -206,4 +206,8 @@ body {
         font-weight: 600;
     }
 
+    .data-name {
+        display: block;
+    }
+
 }
