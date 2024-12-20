@@ -178,18 +178,32 @@ body {
         padding: 50px 0px;
         color: #fff;
     }
+
     .header .search-container {
         padding: 0 15px;
         margin-top: 20px;
     }
-    
+
     .Movie-field {
         flex-direction: column;
+        justify-content: center;
         padding: 10px;
         margin: 30px 30px 0;
     }
+
     .genre {
         flex-direction: column;
-        gap: 25px;
     }
+
+    .no-movie-message {
+        font-size: 20px;
+        width: 400px;
+    }
+
+    .release-date,
+    .directors {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
 }
